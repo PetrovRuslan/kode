@@ -1,0 +1,8 @@
+---
+- name: update servers
+  gather_facts: true
+  hosts: servers
+  become: yes
+
+  roles: 
+    - update_servers
